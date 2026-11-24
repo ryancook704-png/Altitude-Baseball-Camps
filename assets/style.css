@@ -121,3 +121,9 @@ main{flex:1 0 auto}
 .card .ph.diamond::after{height:100%;background:url(diamond.svg) right bottom/auto 100% no-repeat}
 .card .ph.logos{aspect-ratio:21/9;background:var(--cream);display:flex;align-items:center;justify-content:space-evenly;gap:12px;padding:18px 22px;object-fit:fill;border-bottom:1px solid var(--line)}
 .card .ph.logos img{height:100%;width:auto;max-width:31%;object-fit:contain}
+.card img.ph.shot{height:auto;aspect-ratio:21/9;object-fit:cover;background:var(--cream)}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.gallery figure{margin:0;border-radius:var(--radius);overflow:hidden;background:var(--cream)}
+.gallery img{height:auto;width:100%;aspect-ratio:4/3;object-fit:cover}
+.cap{font-size:.9rem;color:var(--mute);margin:12px 0 0}
+@media(max-width:680px){.gallery{grid-template-columns:1fr}.gallery img{aspect-ratio:16/10}}
