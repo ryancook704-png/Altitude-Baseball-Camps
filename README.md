@@ -21,6 +21,7 @@ Static site for altitudebaseballcamps.com, hosted free on GitHub Pages. Plain HT
 ## Pages
 - `index.html` home, `our-camps.html` the three camps, `for-coaches.html` the Coach Partner offer, `contact.html` the inquiry form, `404.html` the not-found page (GitHub Pages serves it automatically).
 - `for-coaches.html` carries its own styles in a `<style>` block scoped to `.fc`: a six-month "We handle / You handle" timeline, a plain-terms ledger, and the disclaimer. Its copy follows the locked contract (3 years, 33% of gross, no minimum payment, minimum camp hours and in-region exclusivity during the term, shortfall fee, renew at 25% or buy). Change the page and the contract together.
+- `.sr` (in `style.css`) hides text visually but keeps it for screen readers; used for section headings that would look redundant and for the "We:" / "You:" labels in the timeline.
 - Do not name a page-scoped CSS class `.camp`; `style.css` already uses it for the Our Camps list.
 
 ## Contact form

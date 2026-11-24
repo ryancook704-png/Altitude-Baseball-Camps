@@ -7,7 +7,7 @@
 <meta property="og:site_name" content="Altitude Baseball Camps"><meta property="og:image" content="https://www.altitudebaseballcamps.com/images/brand/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Altitude Baseball Camps shield logo beside the words Start it. Grow it. Own it."><meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="assets/style.css"><style>
 .fc{--we:#B94A22;--you:#F7F2E9}
-.fc h2{font:700 clamp(1.9rem,3.6vw,2.6rem)/1.08 var(--display);text-transform:uppercase;letter-spacing:.02em;color:var(--navy);margin:0 0 12px}
+.fc h2{font:700 clamp(1.9rem,3.6vw,2.6rem)/1.08 var(--display);text-transform:uppercase;letter-spacing:.02em;color:var(--navy);margin:0 0 12px;text-wrap:balance}
 /* top: headline and the launch timeline together */
 .fc .top{position:relative;isolation:isolate;overflow:hidden;background:var(--navy);color:#fff;padding:72px 0 64px}
 .fc .top::before{content:"";position:absolute;inset:0;z-index:-1;background:repeating-conic-gradient(from -90deg at 88% -20%,rgba(255,255,255,.045) 0 4.5deg,transparent 4.5deg 9deg)}
@@ -37,23 +37,25 @@
 /* the deal */
 .fc .deal{padding:68px 0}
 .fc .deal .wrap{display:grid;grid-template-columns:4fr 7fr;gap:64px;align-items:start}
+.fc .deal .intro{position:sticky;top:104px}
 .fc .deal .intro p{color:var(--mute);margin:0 0 10px}
 .fc dl.ledger{margin:0;border-top:2px solid var(--navy)}
 .fc .ledger div{display:grid;grid-template-columns:190px 1fr;gap:20px;padding:20px 0;border-bottom:1px solid var(--line)}
-.fc .ledger dt{font:700 1.25rem/1.2 var(--display);text-transform:uppercase;letter-spacing:.03em;color:var(--navy)}
+.fc .ledger dt{text-wrap:balance;font:700 1.25rem/1.2 var(--display);text-transform:uppercase;letter-spacing:.03em;color:var(--navy)}
 .fc .ledger dd{margin:0;color:#2b3645}
 /* fit */
 .fc .fit{background:var(--cream);padding:64px 0}
-.fc .fit p{font:500 clamp(1.5rem,3vw,2.2rem)/1.25 var(--display);color:var(--navy);max-width:24em;margin:0}
+.fc .fit p{text-wrap:balance;font:500 clamp(1.5rem,3vw,2.2rem)/1.25 var(--display);color:var(--navy);max-width:24em;margin:0}
 .fc .fit p span{color:var(--mute)}
 /* close */
 .fc .close{background:var(--navy);color:#fff;padding:60px 0}
 .fc .close .wrap{display:flex;flex-wrap:wrap;gap:24px 48px;align-items:center;justify-content:space-between}
 .fc .close h2{color:#fff;margin:0 0 6px}.fc .close p{margin:0;color:#dfe6ef}
 .fc .top :focus-visible,.fc .close :focus-visible{outline-color:var(--ember)}
+@supports not (grid-template-rows:subgrid){.fc .cell{min-height:112px}}
 .fc .fine{font-size:.82rem;color:var(--mute);max-width:760px;margin:0;padding:26px 0}
 @media(max-width:1000px){.fc ol.tl{grid-template-columns:repeat(3,1fr);grid-template-rows:none;gap:26px 10px}.fc ol.tl li{display:flex;flex-direction:column;grid-row:auto}.fc .cell{min-height:92px}.fc .cell.w{order:1}.fc .mark{order:2}.fc .cell.y{order:3}}
-@media(max-width:820px){.fc .deal .wrap{grid-template-columns:1fr;gap:26px}.fc .ledger div{grid-template-columns:1fr;gap:6px}}
+@media(max-width:820px){.fc .deal .intro{position:static}.fc .deal .wrap{grid-template-columns:1fr;gap:26px}.fc .ledger div{grid-template-columns:1fr;gap:6px}}
 @media(max-width:620px){.fc ol.tl li{display:flex}.fc .top{padding:48px 0 44px}.fc ol.tl{grid-template-columns:1fr;gap:0}.fc ol.tl li{padding:18px 0;border-top:1px solid rgba(255,255,255,.14)}.fc ol.tl li:first-child{border-top:0}.fc .mark{height:auto;margin-bottom:10px;order:-1}.fc .mark::before{display:none}.fc .cell{min-height:0}.fc .cell.y{margin-top:6px}.fc .tl-head{margin-top:44px}}
 </style></head><body>
 <a class="skip" href="#main">Skip to content</a>
@@ -62,14 +64,14 @@
 <p class="sub">You coach. We run the system behind it. <b>There is no minimum payment:</b> our fee is a share of your registrations.</p>
 <div class="cta"><a class="btn" href="contact.html">Book a 30-minute call</a><a class="tel" href="tel:+14359019468">or call 435-901-9468</a></div>
 <div class="tl-head"><h2>Your first six months, split between us</h2><div class="key"><span class="w"><i></i>We handle</span><span class="y"><i></i>You handle</span></div></div>
-<ol class="tl"><li><div class="mark "><span>24 weeks out</span></div><div class="cell w"><span class="sr">We: </span>Set up your camp's name, website, insurance and payments.</div><div class="cell y"><span class="sr">You: </span>Sign, then choose your dates.</div></li><li><div class="mark "><span>16 weeks out</span></div><div class="cell w"><span class="sr">We: </span>Open registration with an early-bird price.</div><div class="cell y"><span class="sr">You: </span>Book the field.</div></li><li><div class="mark "><span>12 weeks out</span></div><div class="cell w"><span class="sr">We: </span>Start ads and the parent email series.</div><div class="cell y"><span class="sr">You: </span>Tell local families, schools and leagues.</div></li><li><div class="mark "><span>8 weeks out</span></div><div class="cell w"><span class="sr">We: </span>Review sign-ups with you and adjust the plan.</div><div class="cell y"><span class="sr">You: </span>Hire and train your assistants.</div></li><li><div class="mark now"><span>Camp week</span></div><div class="cell w"><span class="sr">We: </span>Handle questions and send weather alerts.</div><div class="cell y"><span class="sr">You: </span>Coach the camp.</div></li><li><div class="mark "><span>A week later</span></div><div class="cell w"><span class="sr">We: </span>Pay you.</div><div class="cell y"><span class="sr">You: </span>Review the summer and set next year's dates.</div></li></ol></div></section>
+<ol class="tl" role="list"><li><div class="mark"><span>24 weeks out</span></div><div class="cell w"><span class="sr">We: </span>Set up your camp's name, website, insurance and payments.</div><div class="cell y"><span class="sr">You: </span>Sign, then choose your dates.</div></li><li><div class="mark"><span>16 weeks out</span></div><div class="cell w"><span class="sr">We: </span>Open registration with an early-bird price.</div><div class="cell y"><span class="sr">You: </span>Book the field.</div></li><li><div class="mark"><span>12 weeks out</span></div><div class="cell w"><span class="sr">We: </span>Start ads and the parent email series.</div><div class="cell y"><span class="sr">You: </span>Tell local families, schools and leagues.</div></li><li><div class="mark"><span>8 weeks out</span></div><div class="cell w"><span class="sr">We: </span>Review sign-ups with you and adjust the plan.</div><div class="cell y"><span class="sr">You: </span>Hire and train your assistants.</div></li><li><div class="mark now"><span>Camp week</span></div><div class="cell w"><span class="sr">We: </span>Handle questions and send weather alerts.</div><div class="cell y"><span class="sr">You: </span>Coach the camp.</div></li><li><div class="mark"><span>A week later</span></div><div class="cell w"><span class="sr">We: </span>Pay you.</div><div class="cell y"><span class="sr">You: </span>Review the summer and set next year's dates.</div></li></ol></div></section>
 <section class="deal"><div class="wrap"><div class="intro"><h2>The deal in plain terms</h2><p>The answers coaches ask for first. We go through every detail on a call before anything is signed.</p></div>
 <dl class="ledger"><div><dt>What it costs</dt><dd>There is no minimum payment. We earn a share of your registration revenue, and you pay local costs such as the field and your staff.</dd></div>
 <div><dt>What you commit to</dt><dd>A set number of camp hours each summer, and no competing baseball camps in your region while you are with us. If you fall short on hours, a shortfall fee applies, and a second miss lets us end the agreement. We set the details for your town together.</dd></div>
 <div><dt>Who owns the camp</dt><dd>We own the camp's name, website and family list, and you run it. After three years you can renew on lower terms or buy the camp from us.</dd></div>
 <div><dt>If it doesn't fill</dt><dd>You do not owe us a minimum. About eight weeks out we review sign-ups with you and adjust the dates or the marketing.</dd></div>
 <div><dt>Your time</dt><dd>Launch work runs about six months with one 30-minute check-in a week, and the camp itself takes a few weeks in summer. We also check any school or district rules that apply to you.</dd></div></dl></div></section>
-<section class="fit"><div class="wrap"><p>We are looking for coaches with a following in their town and the drive to build a real business. <span>It is not for a side gig with no plan to grow.</span></p></div></section>
+<section class="fit"><div class="wrap"><h2 class="sr">Who this is for</h2><p>We are looking for coaches with a following in their town and the drive to build a real business. <span>It is not for a side gig with no plan to grow.</span></p></div></section>
 <section class="close"><div class="wrap"><div><h2>Is your town next?</h2><p>Tell us about you and your town. We respond within 48 hours.</p></div><a class="btn" href="contact.html">Book a 30-minute call</a></div></section>
 <div class="wrap"><p class="fine">This page describes a possible partnership and is not an offer to sell a franchise or business opportunity. Any offer is made only through the required written disclosures and an agreement, in states where it is permitted.</p></div></main>
 <footer><div class="wrap foot"><div class="fbrand"><img src="images/brand/altitude-lockup-dark.svg" alt="Altitude Baseball Camps" width="151" height="50" loading="lazy"><p>&copy; <span id="y"></span> Altitude Baseball</p></div><div class="fcontact"><a href="mailto:info@boulderbaseballcamps.com">info@boulderbaseballcamps.com</a><a href="tel:+14359019468">435-901-9468</a></div></div></footer>
