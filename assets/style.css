@@ -118,3 +118,6 @@ footer .foot{display:flex;flex-wrap:wrap;gap:20px 40px;justify-content:space-bet
 section.block h1{font:700 clamp(2rem,4.6vw,2.9rem)/1.08 var(--display);text-transform:uppercase;letter-spacing:.02em;margin:0 0 14px;color:var(--navy)}
 .formnote{font-size:.9rem;color:var(--mute);margin:-4px 0 0}
 main{flex:1 0 auto}
+.card .ph.diamond::after{height:100%;background:url(diamond.svg) right bottom/auto 100% no-repeat}
+.card .ph.logos{aspect-ratio:21/9;background:var(--cream);display:flex;align-items:center;justify-content:space-evenly;gap:12px;padding:18px 22px;object-fit:fill;border-bottom:1px solid var(--line)}
+.card .ph.logos img{height:100%;width:auto;max-width:31%;object-fit:contain}
