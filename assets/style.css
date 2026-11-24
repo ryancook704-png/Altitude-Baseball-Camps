@@ -9,11 +9,12 @@
 --display:"Oswald","Arial Narrow",Impact,sans-serif;--text:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
 *{box-sizing:border-box}html{scroll-behavior:smooth}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-body{margin:0;font-family:var(--text);color:var(--ink);background:#fff;line-height:1.6;font-size:17px;-webkit-font-smoothing:antialiased}
+body{margin:0;min-height:100vh;display:flex;flex-direction:column;font-family:var(--text);color:var(--ink);background:#fff;line-height:1.6;font-size:17px;-webkit-font-smoothing:antialiased}
 img{max-width:100%;display:block}a{color:var(--clay-d)}
 :focus-visible{outline:3px solid var(--clay-d);outline-offset:3px}
 header.site :focus-visible,.hero :focus-visible,.est :focus-visible,footer :focus-visible{outline-color:var(--ember)}
 .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.sr{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
 .skip{position:absolute;left:-999px}.skip:focus{left:10px;top:10px;background:#fff;padding:8px;z-index:99}
 
 /* header */
@@ -108,7 +109,12 @@ footer .foot{display:flex;flex-wrap:wrap;gap:20px 40px;justify-content:space-bet
  header.site{position:static}
  header.site .wrap{flex-wrap:wrap;height:auto;padding-top:12px;padding-bottom:10px;gap:8px}
  nav{width:100%;display:flex;justify-content:space-between}
- nav a{margin-left:0;font-size:.78rem;letter-spacing:.1em}
+ nav a{margin-left:0;font-size:.78rem;letter-spacing:.1em;padding:10px 0 6px}
+ .fcontact a{display:block;padding:5px 0}.camp p a{display:inline-block;padding:6px 0}
  .camp{grid-template-columns:1fr}.hero{padding:70px 0 96px}.hero::after{height:110px}
  .fcontact{text-align:left}
 }
+/* contact page: h1 shares the section heading look */
+section.block h1{font:700 clamp(2rem,4.6vw,2.9rem)/1.08 var(--display);text-transform:uppercase;letter-spacing:.02em;margin:0 0 14px;color:var(--navy)}
+.formnote{font-size:.9rem;color:var(--mute);margin:-4px 0 0}
+main{flex:1 0 auto}

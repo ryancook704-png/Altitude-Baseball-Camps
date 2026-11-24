@@ -16,15 +16,18 @@ Static site for altitudebaseballcamps.com, hosted free on GitHub Pages. Plain HT
 
 ## Photos
 - The site currently has no photographs. The old AI-generated photos were removed on purpose; heroes and cards use the brand's rays and ridge-line graphics (`assets/ridge.svg`).
-- When real photos are ready, use `<figure class="photo"><img src="images/your-photo.jpg" alt="..."></figure>` (classes `wide` and `tall` change the shape). See the Photo shot list for what to shoot.
+- Real photos of the camps are the next addition. Planned spots: one wide photo under the For Coaches headline, small photos on the home cards. Use `<figure class="photo"><img src="images/your-photo.jpg" alt="..."></figure>` (classes `wide` and `tall` change the shape) and write real alt text.
 
-## Notes
-- Canonical tags and `sitemap.xml` use `/our-camps`, `/for-coaches`, and `/contact`, matching the old Squarespace URLs. GitHub Pages serves `our-camps.html` at `/our-camps`.
-- `robots.txt` and `sitemap.xml` are included.
+## Pages
+- `index.html` home, `our-camps.html` the three camps, `for-coaches.html` the Coach Partner offer, `contact.html` the inquiry form, `404.html` the not-found page (GitHub Pages serves it automatically).
+- `for-coaches.html` carries its own styles in a `<style>` block scoped to `.fc`: a six-month "We handle / You handle" timeline, a plain-terms ledger, and the disclaimer. Its copy follows the locked contract (3 years, 33% of gross, no minimum payment, minimum camp hours and in-region exclusivity during the term, shortfall fee, renew at 25% or buy). Change the page and the contract together.
+- Do not name a page-scoped CSS class `.camp`; `style.css` already uses it for the Our Camps list.
+
+## Contact form
+- `contact.html` posts to Formspree once `YOUR_FORM_ID` is replaced with a real form ID. Until then a small script opens the visitor's email app with the message filled in, so no inquiry is lost. Once the ID is set the script steps aside and the note under the button disappears on its own.
 
 ## To confirm
 - The email and phone in the footer and on the contact page are Boulder Baseball Camps' details. Replace them with Altitude's own if different (search for `boulderbaseballcamps.com` and `435-901-9468`).
-- The earnings estimator shows total camper revenue. The original showed take-home and per-hour; add that formula in `for-coaches.html`.
-- The stats (3 locations, 2,000+ athletes, since 2017) are copied from the old site. Confirm they're current.
-
-- Travel Camps were removed from the site for now (page removed, nav and contact option dropped). The old `/travel-camps` Squarespace URL will 404; add a redirect to `/for-coaches` if you want one.
+- The stats (3 locations, 2,000+ athletes, since 2017) and the camp claims on Our Camps (85 to 250+ campers, 70% return, sold out in one week) are copied from the old site or supplied by Cook. Confirm they are current before relying on them in coach outreach.
+- The South Denver logo reads "EST. 2024" but the Our Camps copy says it launched in mid-summer 2026. One of them needs to change.
+- Travel Camps were removed from the site for now. The old `/travel-camps` Squarespace URL lands on the 404 page; add a redirect to `/for-coaches` if you want one.
