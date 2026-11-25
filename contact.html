@@ -17,11 +17,11 @@
 <div><label for="msg">Anything you want us to know (optional)</label><textarea id="msg" name="message" rows="5"></textarea></div>
 <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
 <button class="btn" type="submit">Send</button><p class="formnote" id="mailnote" hidden>This opens your email app with your message filled in. Press send there.</p></form>
-<p style="margin-top:28px">Prefer to talk? Call <a href="tel:+14359019468">435-901-9468</a> or email <a href="mailto:info@boulderbaseballcamps.com">info@boulderbaseballcamps.com</a>.</p></div></section></main>
-<footer><div class="wrap foot"><div class="fbrand"><img src="images/brand/altitude-lockup-dark.svg" alt="Altitude Baseball Camps" width="151" height="50" loading="lazy"><p>&copy; <span id="y"></span> Altitude Baseball</p></div><div class="fcontact"><a href="mailto:info@boulderbaseballcamps.com">info@boulderbaseballcamps.com</a><a href="tel:+14359019468">435-901-9468</a><a href="https://www.instagram.com/altitudebaseballcamps/" target="_blank" rel="noopener">Instagram</a></div></div></footer>
+<p style="margin-top:28px">Prefer to talk? Call <a href="tel:+14359019468">435-901-9468</a> or email <a href="mailto:info@altitudebaseballcamps.com">info@altitudebaseballcamps.com</a>.</p></div></section></main>
+<footer><div class="wrap foot"><div class="fbrand"><img src="images/brand/altitude-lockup-dark.svg" alt="Altitude Baseball Camps" width="151" height="50" loading="lazy"><p>&copy; <span id="y"></span> Altitude Baseball</p></div><div class="fcontact"><a href="mailto:info@altitudebaseballcamps.com">info@altitudebaseballcamps.com</a><a href="tel:+14359019468">435-901-9468</a><a href="https://www.instagram.com/altitudebaseballcamps/" target="_blank" rel="noopener">Instagram</a></div></div></footer>
 <script>document.getElementById("y").textContent=new Date().getFullYear();
 (function(){var f=document.querySelector("form.contact");if(!f||f.action.indexOf("YOUR_FORM_ID")<0)return;
 document.getElementById("mailnote").hidden=false;
 f.addEventListener("submit",function(e){e.preventDefault();var d=new FormData(f),g=function(k){return String(d.get(k)||"").trim()};
 var body="Name: "+g("name")+"\nEmail: "+g("email")+"\nPhone: "+g("phone")+"\nTown: "+g("town")+"\n\n"+g("message");
-location.href="mailto:info@boulderbaseballcamps.com?subject="+encodeURIComponent("Coach inquiry from "+g("name"))+"&body="+encodeURIComponent(body)})})();</script></body></html>
+location.href="mailto:info@altitudebaseballcamps.com?subject="+encodeURIComponent("Coach inquiry from "+g("name"))+"&body="+encodeURIComponent(body)})})();</script></body></html>
