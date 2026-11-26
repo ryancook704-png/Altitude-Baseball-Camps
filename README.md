@@ -19,7 +19,7 @@ Static site for altitudebaseballcamps.com, hosted free on GitHub Pages. Plain HT
 - Real photos of the camps are the next addition. Planned spots: one wide photo under the For Coaches headline, small photos on the home cards. Use `<figure class="photo"><img src="images/your-photo.jpg" alt="..."></figure>` (classes `wide` and `tall` change the shape) and write real alt text.
 
 ## Pages
-- `index.html` home, `our-camps.html` the three camps, `for-coaches.html` the Coach Partner offer, `contact.html` the inquiry form, `404.html` the not-found page (GitHub Pages serves it automatically).
+- `index.html` home, `our-camps.html` the two camps, `for-coaches.html` the Coach Partner offer, `contact.html` the inquiry form, `404.html` the not-found page (GitHub Pages serves it automatically).
 - `for-coaches.html` carries its own styles in a `<style>` block scoped to `.fc`: a six-month "We handle / You handle" timeline, a plain-terms ledger, and the disclaimer. Its copy follows the locked contract (3 years, 33% of gross, no minimum payment, minimum camp hours and in-region exclusivity during the term, shortfall fee, renew at 25% or buy). Change the page and the contract together.
 - `.sr` (in `style.css`) hides text visually but keeps it for screen readers; used for section headings that would look redundant and for the "We:" / "You:" labels in the timeline.
 - Do not name a page-scoped CSS class `.camp`; `style.css` already uses it for the Our Camps list.
@@ -29,6 +29,6 @@ Static site for altitudebaseballcamps.com, hosted free on GitHub Pages. Plain HT
 
 ## To confirm
 - The email and phone in the footer and on the contact page are Boulder Baseball Camps' details. Replace them with Altitude's own if different (search for `boulderbaseballcamps.com` and `435-901-9468`).
-- The stats (3 locations, 2,000+ athletes, since 2017) and the camp claims on Our Camps (85 to 250+ campers, 70% return, sold out in one week) are copied from the old site or supplied by Cook. Confirm they are current before relying on them in coach outreach.
+- The stats (2 locations, 2,000+ athletes, since 2017) and the camp claims on Our Camps (85 to 250+ campers, 70% return, sold out in one week) are copied from the old site or supplied by Cook. Confirm they are current before relying on them in coach outreach.
 - The South Denver logo reads "EST. 2024" but the Our Camps copy says it launched in mid-summer 2026. One of them needs to change.
 - Travel Camps were removed from the site for now. The old `/travel-camps` Squarespace URL lands on the 404 page; add a redirect to `/for-coaches` if you want one.
